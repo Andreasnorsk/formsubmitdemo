@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jensen Maskindrift - Kontakt Oss</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="litenlogo.png">
+    <style>
+        .headline {
+            color:green;
+            position: 50%;
+            font-size: 100px;
+        }
+    </style>
+    </head>
+    <body style="background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(bakgrunn-gress.jpg);">
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="banner.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Hjem</a></li>
+                        <li><a href="omoss.html">Om Oss</a></li>
+                        <li><a href="kontaktoss.html">Kontakt Oss</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <div class="text-box">
+            <h1>Kontakt Oss</h1>
+        </div>
+        </section>
+        <!-----Kontakt Oss-----> 
+        <div class="menu-row">
+            <button class="menu-button" id="toggleSebastian">Sebastian - Daglig Leder</button>
+            <button class="menu-button" id="toggleBenjamin">Benjamin - Leid Inn</button>
+            <button class="menu-button" id="toggleAndreas">Andreas - Leid Inn</button>  
+            <button class="menu-button" id="toggleSkjema">Kontakt Skjema</button> 
+        </div>    
+        <section class="kontakt">
+            <!-----Sebastian----->
+            <div class="Sebastian hidden-text">
+                <h2>Sebastian Aspelund Jensen</h2>
+                <div class ="row">
+                    <div class="kontakt-col">
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>Heidal</h5>
+                            <p>Murudalsvegen 990</p>
+                        </span>
+                    </div>
+                    <div class="kontakt-col">
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+47 404 89 618</h5>
+                            <p>Åpent 24 / 7</p>
+                        </span>
+                    </div>
+                    <div class="kontakt-col">
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>sebastian.a.jensen@live.no</h5>
+                            <p>sebastian@jensenmaskindrift.no</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-----Benjamin----->
+            <div class="Benjamin hidden-text">
+                <h2>Benjamin Aspelund Jensen</h2>
+                <div class ="row">
+                    <div class="kontakt-col">
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>Heidal</h5>
+                            <p>Murudalsvegen 990</p>
+                        </span>
+                    </div>
+                    <div class="kontakt-col">
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+47 939 14 516</h5>
+                            <p>Åpent 24 / 7</p>
+                        </span>
+                    </div>
+                    <div class="kontakt-col">
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>benjamin.a.jensen@live.no</h5>
+                            <p>benjamin@jensenmaskindrift.no</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-----Andreas----->
+            <div class="Andreas hidden-text">
+                <h2>Andreas Aspelund Jensen</h2>
+                <div class ="row">
+                    <div class="kontakt-col">
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>Heidal</h5>
+                            <p>Murudalsvegen 990</p>
+                        </span>
+                    </div>
+                    <div class="kontakt-col">
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+47 983 36 241</h5>
+                            <p>Åpent 24 / 7</p>
+                        </span>
+                    </div>
+                    <div class="kontakt-col">
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>aaspelundjensen@gmail.com</h5>
+                            <p>andreas@jensenmaskindrift.no</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-----Kontakt Skjema----->
+            <div class="Skjema hidden-text skjema">
+                <h2>Kontakt Skjema</h2>
+                <form action="https://formsubmit.co/andreas@jensenmaskindrift.no" method="POST">
+                    <input type="hidden" name="_next" value="jensenmaskindrift.no/suksess.html">
+                    <h3>Navn:</h3>
+                    <input type="name" name="name" placeholder="Ditt Navn..." required>
+                    <h3>E-Post:</h3>
+                    <input type="email" name="email" placeholder="Din E-Post Adresse..." required>
+                    <h3>Melding:</h3>
+                    <textarea name="message" rows="4" placeholder="Din Melding..." required></textarea>
+                    <button class="submit-button" type="submit">Send Inn</button>
+               </form>
+            </div>
+            <h2>Jensen Maskindrift AS</h2>
+            <p><iframe class="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d947.1092137988902!2d9.225687176489775!3d61.65607479785418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46152f36c9da1f2d%3A0x56847018a902cd90!2sJensen%20Maskindrift%20AS!5e0!3m2!1sno!2sno!4v1690908353611!5m2!1sno!2sno" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </section>
+        <!-----Om Nettsiden----->
+        <section class="nettsiden">
+            <h3>Om Nettsiden</h3>
+            <p>Denne nettsiden er lagd av og for <b>Jensen Maskindrift AS</b></p>
+            <div class="icons">
+                <a href="https://www.facebook.com/profile.php?id=100083343491106"><i class="fa fa-facebook"></i></a>
+            </div>
+        </section>
+        <!-----Javascript for Toggle Menu-----> 
+        <script>
+
+const toggleSebastian = document.getElementById('toggleSebastian');
+  const divSebastian = document.querySelector('.Sebastian');
+
+  toggleSebastian.addEventListener('click', function () {
+    divSebastian.classList.toggle('hidden-text');
+    divAndreas.classList.add('hidden-text');
+    divBenjamin.classList.add('hidden-text');
+    divSkjema.classList.add('hidden-text');
+  });
+
+  const toggleBenjamin = document.getElementById('toggleBenjamin');
+  const divBenjamin = document.querySelector('.Benjamin');
+
+  toggleBenjamin.addEventListener('click', function () {
+    divBenjamin.classList.toggle('hidden-text');
+    divAndreas.classList.add('hidden-text');
+    divSebastian.classList.add('hidden-text');
+    divSkjema.classList.add('hidden-text');
+  });
+
+  const toggleAndreas = document.getElementById('toggleAndreas');
+  const divAndreas = document.querySelector('.Andreas');
+
+  toggleAndreas.addEventListener('click', function () {
+    divAndreas.classList.toggle('hidden-text');
+    divBenjamin.classList.add('hidden-text');
+    divSebastian.classList.add('hidden-text');
+    divSkjema.classList.add('hidden-text');
+  });
+
+  const toggleSkjema = document.getElementById('toggleSkjema');
+  const divSkjema = document.querySelector('.Skjema');
+
+  toggleSkjema.addEventListener('click', function () {
+    divSkjema.classList.toggle('hidden-text');
+    divBenjamin.classList.add('hidden-text');
+    divSebastian.classList.add('hidden-text');
+    divAndreas.classList.add('hidden-text');
+  });  
+    </script>
+    <script>
+            var navLinks = document.getElementById("navLinks")
+
+function showMenu() {
+    navLinks.style.right = "0";
+}
+
+function hideMenu() {
+    navLinks.style.right = "-200px";
+}
+    </script>
+    </body>
+</html>

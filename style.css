@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+.hidden-text {
+    display: none;
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(bakgrunn.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0 0 30px 0px rgba(37, 90, 16, 0.589);
+    margin-bottom: 30px;
+}
+.suksess-header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(bakgrunn.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.sub-header {
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(rundballpresse.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0 0 30px 0px rgba(37, 90, 16, 0.589);
+    margin-bottom: 30px;
+}
+nav {
+    padding: 0% 5%;
+    justify-content: space-evenly;
+}
+nav img {
+    width: 200px;
+    align-items: flex-start;
+}
+.nav-links {
+    text-align: right;
+    align-items: flex-end;
+    margin-top: -75px;
+}
+.nav-links ul {
+    align-items: flex-end;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 6px 12px;
+    position: relative;
+}
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    text-shadow: 2px 2px dimgray;
+}
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+.text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1 {
+    font-size: 60px;
+    color: green;
+    text-shadow: 2px 2px darkolivegreen;
+}
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: greenyellow;
+}
+.hero-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 32px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.hero-button:hover {
+    border: 1px solid greenyellow;
+    background: greenyellow;
+    box-shadow: 0 0 30px 0px rgba(173, 255, 47, 0.589);
+    transition: 1s;
+}
+.menu-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    width: 33%;
+    height: 40px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: -25px;
+    margin-bottom: 20px;
+}
+.menu-button:hover {
+    border: 1px solid greenyellow;
+    background: greenyellow;
+    box-shadow: 0 0 30px 0px rgba(173, 255, 47, 0.589);
+    transition: 1s;
+}
+nav .fa {
+    display: none;
+}
+
+/* Generell stil for formen */
+.skjema {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f96b;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skjema h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skjema form h3 {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+.skjema form input, textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin: 0;
+    padding: 12px 0px;
+}
+
+.skjema form textarea {
+    min-height: 100px;
+}
+
+.skjema form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.skjema form button:hover {
+    background-color: #0056b3;
+}
+/*-----Tilbud-----*/
+
+.tilbud {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.tilbud h1 {
+    font-size: 42px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 2px 2px gray;
+    margin-bottom: 75px;
+    margin-top: 50px;
+}
+.row {
+    margin-top: 20px;
+    display: flex;
+    justify-content:space-evenly;
+}
+.menu-row {
+    display: flex;
+    justify-content:space-evenly;
+}
+.tilbud-col {
+    flex-basis: 30%;
+    border-radius: 15px;
+    box-sizing:border-box;
+    transition: 0.5s;
+    padding: 10px 6px;
+    margin-bottom: 30px;
+}
+.tilbud-col:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px 0px rgba(10, 10, 10, 0.589);
+}
+.tilbud-col h3 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+.tilbud-col-item {
+    width:100%;
+    height:auto;
+    background-size: cover;
+    background-position: center;
+}
+/*Tilbud Gjenstander*/
+.tilbud-item-1 {
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(steinplukker.jpg);
+}
+
+.tilbud-item-2 {
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(massetransport.jpg);
+}
+
+.tilbud-item-3 {
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(snøfres.jpg);
+}
+
+.tilbud-item-4 {
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(samlerive.jpg);
+}
+
+.tilbud-item-5 {
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(slåmaskin.jpg);
+}
+
+.tilbud-item-6 {
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(tørmøkk.jpg);
+}
+
+.tilbud-item-7 {
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(skrape.jpg);
+}
+
+.tilbud-item-8 {
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(møkkavogn.jpg);
+}
+
+.tilbud-item-9 {
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(rundballpresse.jpg);
+}
+
+.modal-body h3 {
+    font-size: 25px;
+    color: darkgreen;
+}
+.modal-body p {
+    font-size: 15px;
+    color: green;
+}
+
+.nettsiden {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    background: rgba(0, 0, 0, 0.801);
+    box-shadow: 0 0 50px 0px rgba(0, 0, 0, 0.788);
+}
+.nettsiden h3 {
+    font-size: 25px;
+    color: white;
+}
+.nettsiden p {
+    font-size: 15px;
+    color: white;
+}
+/*----- call to action -----*/
+.ko {
+    margin: 100px auto;
+    width: 90%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(slåmaskin.jpg);
+    background-position: center;
+    background-size: fixed;
+    text-align:  center;
+    padding: 100px 0;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.ko:hover {
+    box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.589);
+}
+.ko h2 {
+    margin-bottom: 40px;
+    color: white;
+    padding: 0;
+}
+
+/*Kontakt Oss*/
+
+.kontakt {
+    width: 90%;
+    margin: auto;
+}
+.kontakt-col {
+    display: flex;
+    flex-basis: 25%;
+    align-items: center;
+    background-color:whitesmoke;
+    margin-bottom: 35px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.kontakt-col .fa {
+    font-size: 24px;
+    color: darkgreen;
+    position: center;
+    margin-left: 10px;
+}
+.kontakt-col p {
+    padding: 0;
+    color: green;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.kontakt-col h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: darkgreen;
+    font-weight: 400;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.kontakt-col:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.589);
+}
+.kontakt h2 {
+    font-size: 50px;
+    color: darkgreen;
+    margin-top: 5px;
+    position: center;
+}
+.kontakt h2:hover {
+    text-shadow: 2px 2px darkolivegreen;
+}
+.omossliste p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    color:whitesmoke;
+}
+.omossliste h1 {
+    font-size: 40px;
+    text-align: center;
+    color:whitesmoke;
+}
+
+/*Down Arrow Animation*/
+.down-arrow {
+    position: absolute;
+    top: calc(100vh - 60px);
+    left: calc(50% - 14px);
+    width: 0;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 2px;
+    animation: jumpInfinite 1.5s infinite;
+  }
+  
+  .down-arrow:after {
+    content: " ";
+    position: absolute;
+    top: 14px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 4px solid;
+    border-right: 4px solid;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+  }
+  @keyframes jumpInfinite {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 20px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+  .google-maps {
+    position: center;
+    width: 100%;
+    border-radius: 5px;
+    background-color: green;
+  }
+
+  @media(max-width: 700px) {
+    .kontakt h2 {
+        font-size: 30px;
+        color: darkgreen;
+        margin-top: 5px;
+        position:center;
+    }
+    .text-box h1 {
+        font-size: 50px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: fixed;
+        background: greenyellow;
+        height:150vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 1;
+        transition: 1s;
+    }
+    nav .fa {
+        display: block;
+        color: white;
+        margin: 20px;
+        font-size: 22px;
+        cursor: pointer;
+        margin-top: -75px;
+        margin-left: 325px;
+    }
+    .nav-links ul {
+        padding: 30px;
+        margin-top: 100px;
+    }
+    /*-----Tilbud-----*/
+    .row {
+        flex-direction: column;
+        justify-content:center;
+    }
+    .tilbud-col {
+        margin-top: 5px;
+        margin-bottom:5px;
+    }
+    /*----- call to action -----*/
+    .ko h2 {
+        font-size: 24px;
+    }
+    .tilbud-col {
+        width: 100%;
+        position: center;
+    }
+    .menu-button {
+        display:none;
+    }
+    .hidden-text {
+        display:block;
+    }
+}

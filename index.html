@@ -1,16 +1,719 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <form action="https://formsubmit.co/2a3c0435ea8824937a498df6281a4a65" method="POST">
-     <input type="text" name="name" required>
-     <input type="email" name="email" required>
-     <input type="text" name="text" required>
-     <button type="submit">Send</button>
-  </form>
-</body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jensen Maskindrift</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="icon" href="litenlogo.png">
+    <style>
+        .headline {
+            color:green;
+            position: 50%;
+            font-size: 100px;
+        }
+    </style>
+    </head>
+    <body style="background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(bakgrunn-gress.jpg);">
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="banner.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Hjem</a></li>
+                        <li><a href="omoss.html">Om Oss</a></li>
+                        <li><a href="kontaktoss.html">Kontakt Oss</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <div class="text-box">
+            <h1>Hjelp til alt i landbruket</h1>
+            <p>Vi hjelper bønder med alt fra våronna til brøyting. Du kan også se vår prissats her!
+            </p>
+            <a onclick="topFunction()" class="hero-button">Trykk her for å vite mer</a>
+        </div>
+        </section>
+                <!-----Tilbud----->
+                <section class="tilbud">
+                    <h1>Jobber vi kan tilby deg</h1>
+                    <div class="row">
+                        <div class="tilbud-col tilbud-col-item tilbud-item-1">
+                            <h3>Steinplukking</h3>
+                            <button type="button"
+                            class="hero-button"
+                            data-toggle="modal"
+                            data-target="#steinPlukking">
+                        Se Bilde
+                            </button>
+                            <button type="button"
+                            class="hero-button"
+                            data-toggle="modal"
+                            data-target="#steinPlukkingPris">
+                        Se Priser   
+                            </button>
+                        </div>
+                        <div class="tilbud-col tilbud-col-item tilbud-item-2">
+                            <h3>Massetransport</h3>
+                            <button type="button"
+                            class="hero-button"
+                            data-toggle="modal"
+                            data-target="#massetransport">
+                        Se Bilde
+                    </button>
+                    <button type="button"
+                    class="hero-button"
+                    data-toggle="modal"
+                    data-target="#massetransportPris">
+                Se Priser  
+            </button>
+                        </div>
+                        <div class="tilbud-col tilbud-col-item tilbud-item-3">
+                            <h3>Brøyting m. snøfres</h3>
+                            <button type="button"
+                            class="hero-button"
+                            data-toggle="modal"
+                            data-target="#brøyting">
+                        Se Bilde
+                    </button>
+                    <button type="button"
+                    class="hero-button"
+                    data-toggle="modal"
+                    data-target="#brøytingPris">
+                Se Priser    
+            </button>
+                        </div>
+                        <div class="tilbud-col tilbud-col-item tilbud-item-4">
+                            <h3>Samle gress m. samlerive</h3>
+                            <button type="button"
+                            class="hero-button"
+                            data-toggle="modal"
+                            data-target="#samlerive">
+                        Se Bilde
+                    </button>
+                    <button type="button"
+                    class="hero-button"
+                    data-toggle="modal"
+                    data-target="#samlerivePris">
+                Se Priser    
+            </button>
+                        </div>
+                        <div class="tilbud-col tilbud-col-item tilbud-item-5">
+                            <h3>Slå gress</h3>
+                            <button type="button"
+                            class="hero-button"
+                            data-toggle="modal"
+                            data-target="#slå">
+                        Se Bilde
+                    </button>
+                    <button type="button"
+                    class="hero-button"
+                    data-toggle="modal"
+                    data-target="#slåPris">
+                Se Priser    
+            </button>
+                        </div>
+                        <div class="tilbud-col tilbud-col-item tilbud-item-6">
+                            <h3>Talle spredning</h3>
+                            <button type="button"
+                            class="hero-button"
+                            data-toggle="modal"
+                            data-target="#tørrmøkk">
+                        Se Bilde
+                    </button>
+                    <button type="button"
+                    class="hero-button"
+                    data-toggle="modal"
+                    data-target="#tørrmøkkPris">
+                Se Priser    
+            </button>
+                        </div>
+                        <div class="tilbud-col tilbud-col-item tilbud-item-7">
+                            <h3>Skrape is eller såle</h3>
+                            <button type="button"
+                            class="hero-button"
+                            data-toggle="modal"
+                            data-target="#skrape">
+                        Se Bilde
+                    </button>
+                    <button type="button"
+                    class="hero-button"
+                    data-toggle="modal"
+                    data-target="#skrapePris">
+                Se Priser    
+            </button>
+                        </div>
+                        <div class="tilbud-col tilbud-col-item tilbud-item-8">
+                            <h3>Spredning med vacum vogn</h3>
+                            <button type="button"
+                            class="hero-button"
+                            data-toggle="modal"
+                            data-target="#vacum">
+                        Se Bilde
+                    </button>
+                    <button type="button"
+                    class="hero-button"
+                    data-toggle="modal"
+                    data-target="#vacumPris">
+                Se Priser    
+            </button>
+                        </div>
+                        <div class="tilbud-col tilbud-col-item tilbud-item-9">
+                            <h3>Pressing med kombipresse</h3>
+                            <button type="button"
+                            class="hero-button"
+                            data-toggle="modal"
+                            data-target="#pressing">
+                        Se Bilde
+                    </button>
+                    <button type="button"
+                    class="hero-button"
+                    data-toggle="modal"
+                    data-target="#pressingPris">
+                Se Priser    
+            </button>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <!-----Modaler Steinplukker----->
+                    <div class="modal fade"
+                    id="steinPlukking"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="steinPlukkingLabel"
+                    aria-hidden="true">
+                   <div class="modal-dialog" role="document">
+                       <div class="modal-content">
+                           <div class="modal-body">
+                               <img id="image" src="steinplukker.jpg" alt="Click on button" width="100%" height="50%"/>
+                           </div>
+                           <div class="modal-footer">
+                               <button type="button"
+                                       class="btn btn-secondary"
+                                       data-dismiss="modal">
+                                   Lukk
+                               </button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="modal fade"
+               id="steinPlukkingPris"
+               tabindex="-1"
+               role="dialog"
+               aria-labelledby="steinPlukkingPrisLabel"
+               aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <h3>Steinplukker</h3>
+                                <p>Oppmøte - <b>800 kr.</b> pr time <br>
+                                Timespris - <b>1400 kr.</b> pr time</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button"
+                                    class="btn btn-secondary"
+                                    data-dismiss="modal">
+                                Lukk
+                                </button>
+                                <button type="button"
+                                class="btn btn-primary"
+                                data-toggle="modal"
+                                data-target="#steinPlukking">
+                            Se Bilde
+                               </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-----Modaler Massetransport----->
+                    <div class="modal fade"
+                    id="massetransportPris"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="massetransportPrisLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                       <div class="modal-content">
+                           <div class="modal-body">
+                               <h3>Massehenger</h3>
+                               <p>Oppmøte - <b>800 kr.</b> pr time <br>
+                               Timespris - <b>850 kr.</b> pr time</p>
+                           </div>
+                           <div class="modal-footer">
+                               <button type="button"
+                                       class="btn btn-secondary"
+                                       data-dismiss="modal">
+                                   Lukk
+                                   </button>
+                                   <button type="button"
+                                   class="btn btn-primary"
+                                   data-toggle="modal"
+                                   data-target="#massetransport">
+                               Se Bilde
+                           </button>
+                           </div>
+                       </div>
+                    </div>
+                   </div>
+                       <div class="modal fade"
+                            id="massetransport"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="massetransportLabel"
+                            aria-hidden="true">
+                           <div class="modal-dialog" role="document">
+                               <div class="modal-content">
+                                   <div class="modal-body">
+                                       <img id="image" src="massetransport.jpg" alt="Click on button" width="100%" height="50%"/>
+                                   </div>
+                                   <div class="modal-footer">
+                                       <button type="button"
+                                               class="btn btn-secondary"
+                                               data-dismiss="modal">
+                                           Lukk
+                                       </button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                    <!-----Modaler Snøfres----->
+                    <div class="modal fade"
+                    id="brøytingPris"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="brøytingPrisLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                       <div class="modal-content">
+                           <div class="modal-body">
+                               <h3>Snøfres</h3>
+                               <p>Oppmøte - <b>800 kr.</b> pr time <br>
+                               Timespris - <b>800 kr.</b> pr time</p>
+                           </div>
+                           <div class="modal-footer">
+                               <button type="button"
+                                       class="btn btn-secondary"
+                                       data-dismiss="modal">
+                                   Lukk
+                                   </button>
+                                   <button type="button"
+                                   class="btn btn-primary"
+                                   data-toggle="modal"
+                                   data-target="#brøyting">
+                               Se Bilde
+                           </button>
+                           </div>
+                       </div>
+                    </div>
+                   </div>
+                       <div class="modal fade"
+                            id="brøyting"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="brøytingLabel"
+                            aria-hidden="true">
+                           <div class="modal-dialog" role="document">
+                               <div class="modal-content">
+                                   <div class="modal-body">
+                                       <img id="image" src="snøfres.jpg" alt="Click on button" width="100%" height="50%"/>
+                                   </div>
+                                   <div class="modal-footer">
+                                       <button type="button"
+                                               class="btn btn-secondary"
+                                               data-dismiss="modal">
+                                           Lukk
+                                       </button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                    <!-----Modaler Samlerive----->
+                    <div class="modal fade"
+                    id="samlerivePris"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="samlerivePrisLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                       <div class="modal-content">
+                           <div class="modal-body">
+                               <h3>Samlerive</h3>
+                               <p>Oppmøte - <b>800 kr.</b> pr time <br>
+                               Timespris - <b>800 kr.</b> pr time</p>
+                           </div>
+                           <div class="modal-footer">
+                               <button type="button"
+                                       class="btn btn-secondary"
+                                       data-dismiss="modal">
+                                   Lukk
+                                   </button>
+                                   <button type="button"
+                                   class="btn btn-primary"
+                                   data-toggle="modal"
+                                   data-target="#samlerive">
+                               Se Bilde
+                           </button>
+                           </div>
+                       </div>
+                    </div>
+                   </div>
+                       <div class="modal fade"
+                            id="samlerive"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="samleriveLabel"
+                            aria-hidden="true">
+                           <div class="modal-dialog" role="document">
+                               <div class="modal-content">
+                                   <div class="modal-body">
+                                       <img id="image" src="samlerive.jpg" alt="Click on button" width="100%" height="50%"/>
+                                   </div>
+                                   <div class="modal-footer">
+                                       <button type="button"
+                                               class="btn btn-secondary"
+                                               data-dismiss="modal">
+                                           Lukk
+                                       </button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                    <!-----Modaler Slåmaskin----->
+                    <div class="modal fade"
+                    id="slåPris"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="slåPrisLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                       <div class="modal-content">
+                           <div class="modal-body">
+                               <h3>Slåmaskin</h3>
+                               <p>Oppmøte - <b>800 kr.</b> pr time <br>
+                               Timespris - <b>900 kr.</b> pr time</p>
+                           </div>
+                           <div class="modal-footer">
+                               <button type="button"
+                                       class="btn btn-secondary"
+                                       data-dismiss="modal">
+                                   Lukk
+                                   </button>
+                                   <button type="button"
+                                   class="btn btn-primary"
+                                   data-toggle="modal"
+                                   data-target="#slå">
+                               Se Bilde
+                           </button>
+                           </div>
+                       </div>
+                    </div>
+                   </div>
+                       <div class="modal fade"
+                            id="slå"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="slåLabel"
+                            aria-hidden="true">
+                           <div class="modal-dialog" role="document">
+                               <div class="modal-content">
+                                   <div class="modal-body">
+                                       <img id="image" src="slåmaskin.jpg" alt="Click on button" width="100%" height="100%"/>
+                                   </div>
+                                   <div class="modal-footer">
+                                       <button type="button"
+                                               class="btn btn-secondary"
+                                               data-dismiss="modal">
+                                           Lukk
+                                       </button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                    <!-----Modaler Tørrmøkkspreder----->
+                    <div class="modal fade"
+                    id="tørrmøkkPris"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="tørrmøkkPrisLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                       <div class="modal-content">
+                           <div class="modal-body">
+                               <h3>Tørrmøkkvogn</h3>
+                               <p>Oppmøte - <b>800 kr.</b> pr time <br>
+                               Timespris - <b>1150 kr.</b> pr time</p>
+                           </div>
+                           <div class="modal-footer">
+                               <button type="button"
+                                       class="btn btn-secondary"
+                                       data-dismiss="modal">
+                                   Lukk
+                                   </button>
+                                   <button type="button"
+                                   class="btn btn-primary"
+                                   data-toggle="modal"
+                                   data-target="#tørrmøkk">
+                               Se Bilde
+                           </button>
+                           </div>
+                       </div>
+                    </div>
+                   </div>
+                       <div class="modal fade"
+                            id="tørrmøkk"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="tørrmøkkLabel"
+                            aria-hidden="true">
+                           <div class="modal-dialog" role="document">
+                               <div class="modal-content">
+                                   <div class="modal-body">
+                                       <img id="image" src="tørmøkk.jpg" alt="Click on button" width="100%" height="50%"/>
+                                   </div>
+                                   <div class="modal-footer">
+                                       <button type="button"
+                                               class="btn btn-secondary"
+                                               data-dismiss="modal">
+                                           Lukk
+                                       </button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                    <!-----Modaler Skrape----->
+                    <div class="modal fade"
+                    id="skrapePris"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="skrapePrisLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                       <div class="modal-content">
+                           <div class="modal-body">
+                               <h3>Is Skrape</h3>
+                               <p>Oppmøte - <b>800 kr.</b> pr time <br>
+                               Timespris - <b>900 kr.</b> pr time</p>
+                           </div>
+                           <div class="modal-footer">
+                               <button type="button"
+                                       class="btn btn-secondary"
+                                       data-dismiss="modal">
+                                   Lukk
+                                   </button>
+                                   <button type="button"
+                                   class="btn btn-primary"
+                                   data-toggle="modal"
+                                   data-target="#skrape">
+                               Se Bilde
+                           </button>
+                           </div>
+                       </div>
+                    </div>
+                   </div>
+                       <div class="modal fade"
+                            id="skrape"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="skrapeLabel"
+                            aria-hidden="true">
+                           <div class="modal-dialog" role="document">
+                               <div class="modal-content">
+                                   <div class="modal-body">
+                                       <img id="image" src="skrape.jpg" alt="Click on button" width="100%" height="50%"/>
+                                   </div>
+                                   <div class="modal-footer">
+                                       <button type="button"
+                                               class="btn btn-secondary"
+                                               data-dismiss="modal">
+                                           Lukk
+                                       </button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                    <!-----Modaler Møkkavogn----->
+                    <div class="modal fade"
+                    id="vacumPris"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="vacumPrisLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                       <div class="modal-content">
+                           <div class="modal-body">
+                               <h3>Vacum Vogn</h3>
+                               <p>Oppmøte - <b>800 kr.</b> pr time <br>
+                               Timespris - <b>1350 kr.</b> pr time</p>
+                           </div>
+                           <div class="modal-footer">
+                               <button type="button"
+                                       class="btn btn-secondary"
+                                       data-dismiss="modal">
+                                   Lukk
+                                   </button>
+                                   <button type="button"
+                                   class="btn btn-primary"
+                                   data-toggle="modal"
+                                   data-target="#vacum">
+                               Se Bilde
+                           </button>
+                           </div>
+                       </div>
+                    </div>
+                   </div>
+                       <div class="modal fade"
+                            id="vacum"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="vacumLabel"
+                            aria-hidden="true">
+                           <div class="modal-dialog" role="document">
+                               <div class="modal-content">
+                                   <div class="modal-body">
+                                       <img id="image" src="bakgrunn.jpg" alt="Click on button" width="100%" height="50%"/>
+                                   </div>
+                                   <div class="modal-footer">
+                                       <button type="button"
+                                               class="btn btn-secondary"
+                                               data-dismiss="modal">
+                                           Lukk
+                                       </button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                    <!-----Modaler Rundballpresse----->
+                    <div class="modal fade"
+                    id="pressingPris"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="pressingPrisLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                       <div class="modal-content">
+                           <div class="modal-body">
+                               <h3>Kombipresse</h3>
+                               <p>Oppmøte <b>800 kr.</b> pr time <br>
+                                   ø125 <b>200 kr.</b> pr ball <br>
+                                   ø130 <b>210 kr.</b> pr ball <br>
+                                   ø135 <b>220 kr.</b> pr ball <br>
+                                   ø140 <b>230 kr.</b> pr ball <br>
+                                   ø145 <b>240 kr.</b> pr ball <br>
+                                   ø150 <b>250 kr.</b> pr ball <br>
+                               <b> Kan velge opp til 26 kniver. <br>
+                                   Justerbar størrelse, gjør totalprisen mindre med <br>
+                                   tanke på frakt og kostnaden for plast levering.</b>
+                               </p>
+                           </div>
+                           <div class="modal-footer">
+                               <button type="button"
+                                       class="btn btn-secondary"
+                                       data-dismiss="modal">
+                                   Lukk
+                                   </button>
+                                   <button type="button"
+                                   class="btn btn-primary"
+                                   data-toggle="modal"
+                                   data-target="#pressing">
+                               Se Bilde
+                           </button>
+                           </div>
+                       </div>
+                    </div>
+                   </div>
+                       <div class="modal fade"
+                            id="pressing"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="pressingLabel"
+                            aria-hidden="true">
+                           <div class="modal-dialog" role="document">
+                               <div class="modal-content">
+                                   <div class="modal-body">
+                                       <img id="image" src="rundballpresse-1.jpg" alt="Click on button" width="100%" height="50%"/>
+                                   </div>
+                                   <div class="modal-footer">
+                                       <button type="button"
+                                               class="btn btn-secondary"
+                                               data-dismiss="modal">
+                                           Lukk
+                                       </button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                </section>
+        <!-----Kontakt Oss----->
+        <section class="ko">
+            <h2>Vurderer du å bruke oss? <br>Kontakt oss hvis du bor rundt Sel Kommune</h2>
+            <a href="kontaktoss.html" class="hero-button">Kontakt Oss</a>
+        </section>
+        <!-----Om Nettsiden----->
+        <section class="nettsiden">
+            <h3>Om Nettsiden</h3>
+            <p>Denne nettsiden er lagd av og for <b>Jensen Maskindrift AS</b></p>
+            <div class="icons">
+                <a href="https://www.facebook.com/profile.php?id=100083343491106" target="_blank"><i class="fa fa-facebook"></i></a>
+            </div>
+        </section>
+
+        <!-----Javascript for Toggle Menu-----> 
+        <script>
+
+            var navLinks = document.getElementById("navLinks")
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+                    <!-- Adding scripts to use bootstrap -->
+                    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                        integrity=
+            "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                        crossorigin="anonymous">
+                     </script>
+                    <script src=
+            "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                        integrity=
+            "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                        crossorigin="anonymous">
+                     </script>
+                    <script src=
+            "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                        integrity=
+            "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                        crossorigin="anonymous">
+                     </script>
+
+
+<!-----Scroll Button ----->
+
+  <script>
+    // Get the button
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 1000;
+      document.documentElement.scrollTop = 1000;
+    }
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#menu-container").load("menu.html");
+        });
+    </script>
+    </body>
 </html>
+
